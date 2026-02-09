@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1770371991 source:c:\mycode\fct_rec_vectori\matrici\main.cpp
+	<iostream>
+	<fstream>
+	"exMatrici.h"
+
+1770372006 c:\mycode\fct_rec_vectori\matrici\exmatrici.h
+	<fstream>
+
