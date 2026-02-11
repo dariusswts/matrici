@@ -166,9 +166,102 @@ void ex6(){
     afisareMatrice(a,n,m);
     cout<<ceaMaiMareRepetata(a,n,m);
 
+}
 
 
+//Se dă o matrice cu m linii și n coloane și elemente numere naturale cu cel mult patru cifre. Să se modifice matricea, eliminând penultima linie și penultima coloană.
 
+void afisare_modificata(int a[100][100], int n,int m) {
+    for (int i = 0; i < m; i++) {
+        if (i == m - 2);
+        for (int j = 0; j < n; j++) {
+            if (j == n - 2);
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+void ex7(){
+    int a[100][100],n,m;
+    citireMatrice_fis(a,n,m);
+    afisare_modificata(a,n,m);
+}
+
+//Se dă o matrice cu n linii şi m coloane şi elemente numere naturale. Ordonați crescător elementele de pe fiecare linie a matricei și apoi afişați matricea
+
+void sortare_linii(int a[100][100], int n,int m,int k){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m-1;j++){
+            for(int k=j+1;k<m;k++){
+                if(a[i][j]>a[i][k]){
+                    swap(a[i][j],a[i][k]);
+                }
+            }
+        }
+    }
+}
+void afisare(int a[100][100],int n, int m){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++)
+            cout<<a[i][j]<<" ";
+        cout<<"\n";
+    }
+}
+
+
+void ex8(){
+    int a[100][100];
+    int n, m,k;
+    citireMatrice_fis(a,n,m);
+    sortare_linii(a,n,m,k);
+    afisare(a,n,m);
+}
+
+//Se dă o matrice cu n linii şi m coloane şi elemente numere naturale. Ordonați descrescător elementele de pe fiecare coloană a matricei și apoi afișați matricea.
+
+void sortare_coloane(int a[100][100], int n,int m,int k){
+    for(int j=0;j<m;j++){
+        for(int i=0;i<n-1;i++){
+            for(int k=i+1;k<n;k++){
+                if(a[i][j]<a[k][j]){
+                    swap(a[i][j],a[k][j]);
+                }
+            }
+        }
+    }
+}
+
+void ex9(){
+    int a[100][100];
+    int n, m,k;
+    citireMatrice_fis(a,n,m);
+    sortare_coloane(a,n,m,k);
+    afisare(a,n,m);
+
+}
+//Să se determine, pentru fiecare linie a unei matrice, elementul maxim și indicele coloanei pe care se află.
+
+void maxim_pe_linii(int a[100][100], int n,int m){
+    for(int i=0;i<n;i++){
+        int maxim=a[i][0],poz=0;
+        for(int j=1;j<m;j++)
+            if(a[i][j]>maxim){
+                maxim=a[i][j];
+                poz=j;
+            }
+        cout<<"Linia "<<i<<": max="<<maxim<<" coloana="<<poz<<"\n";
+    }
+}
+
+void ex10(){
+    int a[100][100],n,m;
+    citireMatrice_fis(a,n,m);
+    afisareMatrice(a,n,m);
+    cout<<endl;
+    maxim_pe_linii(a,n,m);
+
+}
 
 
 
