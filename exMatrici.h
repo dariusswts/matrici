@@ -180,6 +180,22 @@ int numaraLiniiElemEgale(int a[100][100],int n, int m){
     return ct;
 }
 
+//Se dă o matrice cu m linii şi n coloane şi elemente numere naturale cu cel mult 4 cifre fiecare. Să se determine coloanele matricei care au toate elementele egale cu aceeași valoare.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

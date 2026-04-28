@@ -1,9 +1,13 @@
 # depslib dependency file v1.0
-1770371991 source:c:\mycode\fct_rec_vectori\matrici\main.cpp
+1770796049 source:c:\mycode\fct_rec_vectori\matrici\main.cpp
 	<iostream>
 	<fstream>
-	"exMatrici.h"
+	"tema.h"
 
 1770372006 c:\mycode\fct_rec_vectori\matrici\exmatrici.h
+	<fstream>
+
+1770796037 c:\mycode\fct_rec_vectori\matrici\tema.h
+	<iostream>
 	<fstream>
 
